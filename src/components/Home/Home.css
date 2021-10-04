@@ -5,10 +5,20 @@
     background-position: center;
     background-size:cover;
 }
+.home-section{
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1;
+    text-align: start;
+    height: 100%;
+}
+.home-section p{
+    padding-left: 300px;
+}
 .servicess{
     font-size: 2.5rem;
     font-weight: 700;
-    color: rgb(236, 243, 232);
+    color: rgb(194, 238, 36);
     text-align:center;
     padding-top: 50px;
 }
@@ -40,4 +50,10 @@
 }
 .height{
     height: 60vh;
+}
+.servicesss{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   margin-left: 10px;
+    
 }

@@ -8,7 +8,6 @@ import {
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
-import Services from './components/Services/Services';
 import Sports from './components/Sports/Sports';
 import TotalService from './components/TotalService/TotalService';
 import About from './components/About/About';
@@ -22,15 +21,13 @@ function App() {
                <Route exact path="/">
                    <Home></Home>
                </Route>
-               <Route path="/home">
+               <Route exact path="/home">
                    <Home></Home>
                </Route>
                <Route path="/sports">
                    <Sports></Sports>
                </Route>
-               <Route path="/services">
-                   <Services></Services>
-               </Route>
+               
                <Route path="/about">
                    <About></About>
                </Route>

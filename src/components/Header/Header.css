@@ -1,11 +1,23 @@
+.background{
+    background-color: #06083B;
+}
+.nav-brand{
+    font-family: fantasy;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+}
+.navbars{
+   display: flex;
+}
 .nav-brand{
     font-size: 2rem;
-    font-family: fantasy;
+    font-family:cursive;
 }
 .nav-item{
     text-decoration: none;
     padding-top: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
-.background{
-    background-color: #06083B;
-}
+

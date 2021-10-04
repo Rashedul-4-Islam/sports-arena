@@ -1,17 +1,46 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useState } from 'react';
+import { Card } from 'react-bootstrap';
 import './Home.css'
 const Home = () => {
+    const [service,setService] = useState([]);
+    useEffect(() => {
+        fetch('./service.json')
+        .then(res => res.json())
+        .then(data => setService(data))
+    },[])
     return (
         <div className='home-intro '>
            
             <div className="home">
-            <h4 className="servicess">Our Services</h4>
-            <Link to="/services">
-            <button className="btn btn-primary px-4">Details</button>
-            </Link>
+              <div className="home-section">
+                <h4 className="servicess">SPORTS ARENA</h4>
+                <p className="fw-bold">We train our students in cricket, football, basketball, boxing and how to play responsibly</p>
+              </div>
             </div>
+            <div>
+            <div>
+            <h3 className="fw-bold bg-warning w-50 m-auto my-4 p-3 rounded-pill">Our Services</h3>
+            <div className="servicesss">
+            {
+                service.map(ser => <div className="text-dark">
+                   <Card style={{ width: '18rem',height:'24rem',backgroundColor:'black',color:'white' }}>
+                    <Card.Img className="p-2" variant="top" src={ser.pic} />
+                    <Card.Body>
+                        <Card.Title>{ser.name}</Card.Title>
+                        <Card.Text className="card-text">
+                          {ser.effect}
+                        </Card.Text>
+                    </Card.Body>
+                    </Card>
+                </div>)
+            }
+            </div>
+        </div>
+            </div>
+
             <div>
                  <h3 className="bg-light text-dark w-25 m-auto my-4 fw-bold rounded-pill">OUR <span className="text-warning">TEAM</span></h3>
                  <Carousel className="w-50 m-auto py-3 ">

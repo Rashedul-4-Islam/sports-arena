@@ -3,7 +3,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div className=" text-light p-4 footer-area">
-            <div className="row">
+            <div className="row mt-4">
                   <div className="col-md-4">
                        <h3 className="text-warning">Sports Arena</h3>
                        <p><i class="fas fa-map-marker-alt"></i> 20 First Avenue, Dhaka, CA 95101, BD</p>
