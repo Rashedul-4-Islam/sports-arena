@@ -15,14 +15,17 @@ const Home = () => {
         <div className='home-intro '>
            
             <div className="home">
+                {/*========= first section  ============*/}
               <div className="home-section">
                 <h4 className="servicess">SPORTS ARENA</h4>
-                <p className="fw-bold">We train our students in cricket, football, basketball, boxing and how to play responsibly</p>
+                <p className="fw-bold w-sm-50">We train our students in cricket, football, basketball, boxing and how to play responsibly</p>
               </div>
             </div>
             <div>
             <div>
             <h3 className="fw-bold bg-warning w-50 m-auto my-4 p-3 rounded-pill">Our Services</h3>
+
+            {/*============ second section  ============*/}
             <div className="servicesss">
             {
                 service.map(ser => <div className="text-dark">
@@ -40,7 +43,7 @@ const Home = () => {
             </div>
         </div>
             </div>
-
+             {/*============ third section  =============*/}
             <div>
                  <h3 className="bg-light text-dark w-25 m-auto my-4 fw-bold rounded-pill">OUR <span className="text-warning">TEAM</span></h3>
                  <Carousel className="w-50 m-auto py-3 ">

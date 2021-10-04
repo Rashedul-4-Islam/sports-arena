@@ -1,15 +1,16 @@
 .background{
     background-color: #06083B;
-}
-.nav-brand{
-    font-family: fantasy;
-    font-size: 1.5rem;
-    font-weight: 800;
     color: white;
 }
-.navbars{
-   display: flex;
+.navbrand{
+    font-family:fantasy;
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    color: yellow;
+    margin-right: 20px;
 }
+
 .nav-brand{
     font-size: 2rem;
     font-family:cursive;
@@ -20,4 +21,11 @@
     font-size: 1.2rem;
     font-weight: 700;
 }
+
+@media only screen and (max-width: 600px) {
+    .background{
+        width: 100vw;
+        background-color: #06083B;
+    }
+  }
 

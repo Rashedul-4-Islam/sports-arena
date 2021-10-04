@@ -1,43 +1,53 @@
 import React from 'react';
-import { Container, Navbar } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import './Header.css'
 const Header = () => {
     return (
-        <div className="background">
-            <Navbar>
-                <Container>
-                    <Navbar className="nav-brand me-5">Sports-Arena</Navbar>
-                    <Navbar.Toggle aria-controls="navbarScroll" />
-                    <Navbar.Collapse id="navbarScroll">
-                        <NavLink className="nav-item me-3" to="/home"
-                                        activeStyle={{
-                                            fontWeight: "bold",
-                                            color: "red"
-                                        }}
-                                    >Home</NavLink>
-                                    <NavLink className="nav-item me-3" to="/sports"
-                                        activeStyle={{
-                                            fontWeight: "bold",
-                                            color: "red"
-                                        }}
-                                    >Sports</NavLink>
-                                    <NavLink className="nav-item me-3" to="/about"
-                                        activeStyle={{
-                                            fontWeight: "bold",
-                                            color: "red"
-                                        }}
-                                    >About</NavLink>
-                                    <NavLink className="nav-item me-3" to="/totalService"
-                                        activeStyle={{
-                                            fontWeight: "bold",
-                                            color: "red"
-                                        }}
-                                    >Services</NavLink>
-                    </Navbar.Collapse>
-                </Container>
-                </Navbar>
+        <nav className="navbar navbar-expand-lg background">
+        <div className="container fluid">
+          <Navbar className="navbrand" >Sports Arena</Navbar>
+          <button className="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <NavLink className="nav-link active" aria-current="page" to="/home"
+                        activeStyle={{
+                            fontWeight: "bold",
+                            color: "red"
+                        }}
+                >Home</NavLink>
+              </li>
+              <li className="nav-item">
+              <NavLink className="nav-link active" aria-current="page" to="/sports"
+                      activeStyle={{
+                        fontWeight: "bold",
+                        color: "red"
+                    }}
+              >Sports</NavLink>
+              </li>
+              <li className="nav-item">
+              <NavLink className="nav-link active" aria-current="page" to="/about"
+                     activeStyle={{
+                        fontWeight: "bold",
+                        color: "red"
+                    }}
+              >About</NavLink>
+              </li>
+              <li className="nav-item">
+              <NavLink className="nav-link active" aria-current="page" to="/totalService"
+                       activeStyle={{
+                        fontWeight: "bold",
+                        color: "red"
+                    }}
+              >Services</NavLink>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
     );
 };
 

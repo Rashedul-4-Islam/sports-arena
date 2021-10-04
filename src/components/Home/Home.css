@@ -57,3 +57,24 @@
    margin-left: 10px;
     
 }
+
+@media only screen and (max-width: 600px) {
+    .home{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(https://sportsmatik.com/uploads/sports-corner/equipment-bn.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+    }
+    .servicesss{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       margin-left: 10px;
+        
+    }
+    .home-section{
+        text-align: start;
+        width: 100%;
+    }
+  }
