@@ -1,10 +1,10 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
@@ -34,7 +34,7 @@ function App() {
                <Route path="/totalService">
                    <TotalService></TotalService>
                </Route>
-               <Route path="*">
+               <Route path='*'>
                    <ErrorPage></ErrorPage>
                </Route>
            </Switch>
