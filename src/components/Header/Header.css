@@ -1,0 +1,11 @@
+.nav-brand{
+    font-size: 2rem;
+    font-family: fantasy;
+}
+.nav-item{
+    text-decoration: none;
+    padding-top: 5px;
+}
+.background{
+    background-color: #06083B;
+}

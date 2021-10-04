@@ -1,0 +1,16 @@
+.sport-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:3px solid red;
+}
+.sport-image:hover{
+    border:3px solid rgb(46, 48, 160);
+}
+.bg-change{
+    background-color: rgb(14, 15, 11);
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 5px 20px 15px grey;
+}

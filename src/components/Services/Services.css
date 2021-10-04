@@ -1,0 +1,13 @@
+.services{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 50%;
+    margin: 50px auto;
+    grid-row-gap: 10px;
+    grid-column-gap: -1rem;
+    
+}
+.card-text{
+    font-size: 1rem;
+    font-weight: 400;
+}

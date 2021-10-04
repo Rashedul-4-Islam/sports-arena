@@ -1,0 +1,10 @@
+.error-page{
+    height: 100vh;
+    padding-top: 120px ;
+}
+.error-page h2{
+    color: blueviolet;
+}
+.error-page p{
+    font-size: 1.4rem;
+}

@@ -1,0 +1,16 @@
+.total-service{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+}
+.images{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color:red;
+}
+.images:hover{
+    transition: 0.5s;
+    border: 3px solid red;
+    background-color:white;
+}

@@ -1,0 +1,17 @@
+.footer-area{
+    height: 40vh;
+    background-color: #06083B;
+    
+}
+.footers{
+    height: 10vh;
+    display: flex;
+    justify-content:space-evenly;
+    /* padding-bottom: 30px; */
+}
+.icons p{
+    padding-right: 15px;
+}
+.icons p:hover{
+    color: burlywood;
+}
