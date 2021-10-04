@@ -37,7 +37,7 @@ function App() {
                <Route path="/totalService">
                    <TotalService></TotalService>
                </Route>
-               <Route exact path="*">
+               <Route path="*">
                    <ErrorPage></ErrorPage>
                </Route>
            </Switch>
