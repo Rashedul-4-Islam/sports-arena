@@ -6,7 +6,7 @@ const Header = () => {
     return (
       <Navbar className="background " expand="lg">
       <Container className="text-dark">
-        <Navbar.Brand className="fs-2 fw-bold me-3 text-light" >SPORTS<span className="nav-brand"><i class="fas fa-basketball-ball"></i>ARENA</span></Navbar.Brand>
+        <Navbar.Brand className="fs-2 fw-bold me-3 text-light" >SPORTS<span className="nav-brand"><i className="fas fa-basketball-ball"></i>ARENA</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="text-warning" />
         <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className="me-auto">

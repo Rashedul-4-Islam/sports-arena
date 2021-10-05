@@ -2,9 +2,9 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { Card } from 'react-bootstrap';
 import './Home.css'
 import { Link } from 'react-router-dom';
+import Service from '../Service/Service';
 const Home = () => {
     const [service,setService] = useState([]);
     useEffect(() => {
@@ -27,17 +27,11 @@ const Home = () => {
             <h3 className="fw-bold bg-warning w-50 m-auto my-4 p-3 rounded-pill">Our Services</h3>
             <div className="home-service">
             {
-                service.map(ser => <div className="text-dark">
-                   <Card style={{ width: '18rem',height:'24rem',backgroundColor:'black',color:'white' }}>
-                    <Card.Img className="p-2" variant="top" src={ser.pic} />
-                    <Card.Body>
-                        <Card.Title>{ser.name}</Card.Title>
-                        <Card.Text className="card-text">
-                          {ser.effect}
-                        </Card.Text>
-                    </Card.Body>
-                    </Card>
-                </div>)}
+                service.map(ser => <Service
+                    key={ser.id}
+                    ser = {ser}
+                ></Service>
+                )}
             </div>
         </div>
             <div className=" w-50 m-auto my-5">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import Servicess from '../Servicess/Servicess';
 import './TotalService.css'
 const TotalService = () => {
     const [services,setServices] = useState([]);
@@ -14,11 +15,10 @@ const TotalService = () => {
             <h3 className="text-light w-50 m-auto p-4 rounded-pill my-3 bg-dark">OUR SERVICES</h3>
             <div className="total-service">
                 {
-                    services.map(service => <div className="w-75">
-                        <img className=" images" src={service.pic} alt="" />
-                        <h2>{service.name}</h2>
-                        <p>{service.description}</p>
-                    </div>)
+                    services.map(service => <Servicess
+                      key = {service.id}
+                      service={service}
+                    ></Servicess>)
                 }
             </div>
         </div>
