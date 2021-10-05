@@ -36,12 +36,11 @@ const Registration = () => {
                     </Button>
                     </Form>
                   </div>
-                  <div className="col-12 col-md-6">
+                  <div className="col-12 col-md-6 my-4">
                      <div>
-                     <img className="w-25" src="https://media.istockphoto.com/vectors/register-now-round-red-grunge-stamp-vector-id696912944?b=1&k=20&m=696912944&s=612x612&w=0&h=JdB-93ia37oQF7OccwQS6PWv7hdK57cM2zGYUl7Gup4=" alt="" />
+                     <img className="w-25 p-3" src="https://media.istockphoto.com/vectors/register-now-round-red-grunge-stamp-vector-id696912944?b=1&k=20&m=696912944&s=612x612&w=0&h=JdB-93ia37oQF7OccwQS6PWv7hdK57cM2zGYUl7Gup4=" alt="" />
                      </div>
                       <div>
-                          
                       <img className="w-50" src="./image/bg-image/registration.jpg" alt="" />
                       </div>
                   </div>

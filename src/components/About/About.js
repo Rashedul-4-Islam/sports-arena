@@ -30,29 +30,29 @@ const About = () => {
                     <h3 className=" fw-bolder fs-2">OUR <span className="text-warning ">AWARDS</span></h3>
                     <p className="fs-4">The Sports Arena is proud of its excellent record in the consistent production.</p>
                     <div className="ms-5 pe-4">
-                        <img src="./image/awards/Trophy_01.png" alt="" />
-                        <img src="./image/awards/Trophy_08.png" alt="" />
-                        <img src="./image/awards/Trophy_09.png" alt="" />
-                        <img src="./image/awards/Trophy_06.png" alt="" />
+                        <img className="img-trans" src="./image/awards/Trophy_01.png" alt="" />
+                        <img className="img-trans" src="./image/awards/Trophy_08.png" alt="" />
+                        <img className="img-trans" src="./image/awards/Trophy_09.png" alt="" />
+                        <img className="img-trans" src="./image/awards/Trophy_06.png" alt="" />
                     </div>
                     </div>
                 </div>
                 {/*=================== our coaches  ================*/}
                 <div className="my-5">
-                    <h2>OUR <span className="text-danger">COACHES</span></h2>
+                    <h2 className="fw-bold">OUR <span className="text-danger">COACHES</span></h2>
                     <p>Our team has a proven track record of success in teaching and training players.</p>
                     <div className="fourth-section">
-                            <Card className="coach-card" style={{ width: '18rem' }}>
+                            <Card className="coach-card card-trans" style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="./image/coach/inner-team-01.jpg" />
                             <Card.Body>
-                                <Card.Title>Steven Smith</Card.Title>
+                                <Card.Title>STEVEN SMITH</Card.Title>
                                 <p>MAIN COACH</p>
                                 <Card.Text>
                                 Smith joined Arena in 2015 . He has long been involved in Sports at the top level with experience
                                 </Card.Text>
                             </Card.Body>
                             </Card>
-                            <Card className="coach-card" style={{ width: '18rem' }}>
+                            <Card className="coach-card card-trans" style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="./image/coach/inner-team-02.jpg" />
                             <Card.Body>
                                 <Card.Title>MARIO JOHNSON</Card.Title>
@@ -62,7 +62,7 @@ const About = () => {
                                 </Card.Text>
                             </Card.Body>
                             </Card>
-                            <Card className="coach-card" style={{ width: '18rem' }}>
+                            <Card className="coach-card card-trans" style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="./image/coach/inner-team-03.jpg" />
                             <Card.Body>
                                 <Card.Title>MARK SMITH</Card.Title>
@@ -72,7 +72,7 @@ const About = () => {
                                 </Card.Text>
                             </Card.Body>
                             </Card>
-                            <Card className="coach-card" style={{ width: '18rem' }}>
+                            <Card className="coach-card card-trans" style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="./image/coach/inner-team-04.jpg" />
                             <Card.Body>
                                 <Card.Title>TOM LEE</Card.Title>

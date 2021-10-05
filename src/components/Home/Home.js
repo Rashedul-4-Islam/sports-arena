@@ -46,7 +46,7 @@ const Home = () => {
              {/*============ third section  =============*/}
             <div>
                  <h3 className="bg-light text-dark w-25 m-auto my-4 fw-bold rounded-pill">OUR <span className="text-warning">TEAM</span></h3>
-                 <Carousel className="w-50 m-auto py-3 ">
+                 <Carousel className="carousel-wid m-auto py-3 ">
                         <Carousel.Item >
                            <div >
                            <img
