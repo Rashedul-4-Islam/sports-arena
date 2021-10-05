@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { Card } from 'react-bootstrap';
 import './Home.css'
+import { Link } from 'react-router-dom';
 const Home = () => {
     const [service,setService] = useState([]);
     useEffect(() => {
@@ -21,11 +22,9 @@ const Home = () => {
                 <p className="fw-bold w-sm-50">We train our students in cricket, football, basketball, boxing and how to play responsibly</p>
               </div>
             </div>
-            <div>
+               {/*============== service section  ==============*/}
             <div>
             <h3 className="fw-bold bg-warning w-50 m-auto my-4 p-3 rounded-pill">Our Services</h3>
-
-            {/*============ second section  ============*/}
             <div className="home-service">
             {
                 service.map(ser => <div className="text-dark">
@@ -38,10 +37,11 @@ const Home = () => {
                         </Card.Text>
                     </Card.Body>
                     </Card>
-                </div>)
-            }
+                </div>)}
             </div>
         </div>
+            <div className=" w-50 m-auto my-5">
+            <Link to="/totalService" className="btn btn-warning fw-bold">More Service </Link>
             </div>
              {/*============ third section  =============*/}
             <div>
@@ -111,7 +111,9 @@ const Home = () => {
                         </Carousel>
             </div>
         </div>
+        
     );
+    
 };
 
 export default Home;
