@@ -10,6 +10,7 @@ const About = () => {
                 <p className="fs-4 fw-bold w-75">We are a competitive professional Sports club - with our players competing at all levels from local team galas.</p>
                 </div>
             </div>
+              {/*================ mission & vision  ============*/}
             <div className="row p-3 my-5">
                <div className="col-12 col-md-6 text-start">
                <img className="w-75" src="https://cdn.wallpapersafari.com/69/98/WTwE4y.jpg" alt="" />
@@ -23,8 +24,8 @@ const About = () => {
                     </span>
 
                 </div>
-
-                <div className="third-section my-3">
+                {/*==================== awards section  ==================*/}
+                <div className="third-section mt-5">
                     <div className="awards">
                     <h3 className=" fw-bolder fs-2">OUR <span className="text-warning ">AWARDS</span></h3>
                     <p className="fs-4">The Sports Arena is proud of its excellent record in the consistent production.</p>
@@ -36,12 +37,12 @@ const About = () => {
                     </div>
                     </div>
                 </div>
-                
-                <div>
+                {/*=================== our coaches  ================*/}
+                <div className="my-5">
                     <h2>OUR <span className="text-danger">COACHES</span></h2>
                     <p>Our team has a proven track record of success in teaching and training players.</p>
                     <div className="fourth-section">
-                            <Card style={{ width: '18rem' }}>
+                            <Card className="coach-card" style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="./image/coach/inner-team-01.jpg" />
                             <Card.Body>
                                 <Card.Title>Steven Smith</Card.Title>
@@ -51,7 +52,7 @@ const About = () => {
                                 </Card.Text>
                             </Card.Body>
                             </Card>
-                            <Card style={{ width: '18rem' }}>
+                            <Card className="coach-card" style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="./image/coach/inner-team-02.jpg" />
                             <Card.Body>
                                 <Card.Title>MARIO JOHNSON</Card.Title>
@@ -61,7 +62,7 @@ const About = () => {
                                 </Card.Text>
                             </Card.Body>
                             </Card>
-                            <Card style={{ width: '18rem' }}>
+                            <Card className="coach-card" style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="./image/coach/inner-team-03.jpg" />
                             <Card.Body>
                                 <Card.Title>MARK SMITH</Card.Title>
@@ -71,7 +72,7 @@ const About = () => {
                                 </Card.Text>
                             </Card.Body>
                             </Card>
-                            <Card style={{ width: '18rem' }}>
+                            <Card className="coach-card" style={{ width: '18rem' }}>
                             <Card.Img variant="top" src="./image/coach/inner-team-04.jpg" />
                             <Card.Body>
                                 <Card.Title>TOM LEE</Card.Title>

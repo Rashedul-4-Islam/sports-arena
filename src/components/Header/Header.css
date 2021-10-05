@@ -1,31 +1,20 @@
 .background{
-    background-color: #06083B;
-    color: white;
+    background-color: #1f181b;
 }
-.navbrand{
+.nav-brand{
     font-family:fantasy;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 800;
-    color: white;
-    color: yellow;
+    color: rgb(240, 104, 104);
     margin-right: 20px;
 }
 
-.nav-brand{
-    font-size: 2rem;
-    font-family:cursive;
-}
-.nav-item{
-    text-decoration: none;
-    padding-top: 5px;
-    font-size: 1.2rem;
-    font-weight: 700;
-}
+
 
 @media only screen and (max-width: 600px) {
     .background{
         width: 100vw;
-        background-color: #06083B;
+        background-color: #1f181b;
     }
   }
 

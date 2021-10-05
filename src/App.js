@@ -12,6 +12,7 @@ import Sports from './components/Sports/Sports';
 import TotalService from './components/TotalService/TotalService';
 import About from './components/About/About';
 import ErrorPage from './components/ErrorPage/ErrorPage';
+import Registration from './components/Registration/Registration';
 function App() {
   return (
     <div className="App">
@@ -33,6 +34,9 @@ function App() {
                </Route>
                <Route path="/totalService">
                    <TotalService></TotalService>
+               </Route>
+               <Route path="/registration">
+                   <Registration></Registration>
                </Route>
                <Route path='*'>
                    <ErrorPage></ErrorPage>

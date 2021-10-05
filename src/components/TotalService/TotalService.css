@@ -14,3 +14,11 @@
     border: 3px solid red;
     background-color:white;
 }
+
+@media only screen and (max-width: 600px){
+    .total-service{
+        display: grid;
+        grid-column-gap: 10px;
+        grid-template-columns: repeat(2,1fr);
+    }
+}

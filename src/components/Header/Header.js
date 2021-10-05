@@ -1,53 +1,50 @@
 import React from 'react';
-import { Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import './Header.css'
 const Header = () => {
     return (
-        <nav className="navbar navbar-expand-lg background">
-        <div className="container fluid">
-          <Navbar className="navbrand" >Sports Arena</Navbar>
-          <button className="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <NavLink className="nav-link active" aria-current="page" to="/home"
-                        activeStyle={{
-                            fontWeight: "bold",
-                            color: "red"
-                        }}
-                >Home</NavLink>
-              </li>
-              <li className="nav-item">
-              <NavLink className="nav-link active" aria-current="page" to="/sports"
-                      activeStyle={{
-                        fontWeight: "bold",
-                        color: "red"
-                    }}
-              >Sports</NavLink>
-              </li>
-              <li className="nav-item">
-              <NavLink className="nav-link active" aria-current="page" to="/about"
+      <Navbar className="background " expand="lg">
+      <Container className="text-dark">
+        <Navbar.Brand className="fs-2 fw-bold me-3 text-light" >SPORTS<span className="nav-brand"><i class="fas fa-basketball-ball"></i>ARENA</span></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="text-warning" />
+        <Navbar.Collapse id="basic-navbar-nav" >
+          <Nav className="me-auto">
+            <NavLink className="text-decoration-none ms-4" to="/home"
+                  activeStyle={{
+                    fontWeight: "bold",
+                    color: "red"
+                }}
+            >Home</NavLink>
+            <NavLink className="text-decoration-none ms-3" to="/sports"
+                   activeStyle={{
+                    fontWeight: "bold",
+                    color: "red"
+                }}
+            >Sports</NavLink>
+            <NavLink className="text-decoration-none ms-3" to="/about"
+                    activeStyle={{
+                      fontWeight: "bold",
+                      color: "red"
+                  }}
+            >About</NavLink>
+            <NavLink className="text-decoration-none ms-3" to="/totalService"
                      activeStyle={{
-                        fontWeight: "bold",
-                        color: "red"
-                    }}
-              >About</NavLink>
-              </li>
-              <li className="nav-item">
-              <NavLink className="nav-link active" aria-current="page" to="/totalService"
-                       activeStyle={{
-                        fontWeight: "bold",
-                        color: "red"
-                    }}
-              >Services</NavLink>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+                      fontWeight: "bold",
+                      color: "red"
+                      
+                  }}
+            >Service</NavLink>
+            <NavLink className="text-decoration-none ms-3" to="/registration"
+                    activeStyle={{
+                      fontWeight: "bold",
+                      color: "red"
+                  }}
+             >Registration</NavLink>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
     );
 };
 

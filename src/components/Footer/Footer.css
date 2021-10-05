@@ -1,6 +1,6 @@
 .footer-area{
     height: 50vh;
-    background-color: #06083B;
+    background-color: #1f181b;
     
 }
 .footers{
@@ -9,9 +9,20 @@
     justify-content:space-evenly;
     /* padding-bottom: 30px; */
 }
+.order-list li{
+    list-style:none;
+}
 .icons p{
     padding-right: 15px;
 }
 .icons p:hover{
     color: burlywood;
+}
+
+@media only screen and (max-width: 600px){
+    .footer-area{
+        height: 100vh;
+        background-color: #1f181b;
+        
+    }
 }

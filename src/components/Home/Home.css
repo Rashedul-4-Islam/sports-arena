@@ -77,4 +77,15 @@
         text-align: start;
         width: 100%;
     }
+    .home-section p{
+        display: none;
+    }
+    .sliders{
+      display: none;
+      
+    }
+    .height{
+        height: 30vh;
+    }
+    
   }
