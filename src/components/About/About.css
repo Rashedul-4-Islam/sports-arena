@@ -14,6 +14,7 @@
   height: 100%;
   padding: 100px 50px;
 }
+ /*================ awards section style  ==============*/
 .third-section{
     height: 50vh;
     background-image: url(https://cdn.wallpapersafari.com/69/98/WTwE4y.jpg);
@@ -21,14 +22,6 @@
     background-position: center;
     background-size: cover;
     
-}
-.img-trans:hover{
-    transform: scale(1.2,1.2);
-    transition: 1s;
-}
-.card-trans:hover{
-    transform: scale(1.1,1.1);
-    transition: 1s;
 }
 .awards{
     background: rgb(0, 0, 0); 
@@ -38,16 +31,43 @@
     height: 100%;
     padding: 20px;
 }
+.img-trans:hover{
+    transform: scale(1.2,1.2);
+    transition: 1s;
+}
+
+ /*============== coaches part style  =============*/
 .fourth-section{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    margin-top: 40px;
 }
 .coach-card{
     box-shadow: 5px 10px 10px rgb(85, 54, 54);
 }
+.card-trans:hover{
+    transform: scale(1.1,1.1);
+    transition: 1s;
+}
+
+  /*========= responsive for small device  =============*/
 @media only screen and (max-width: 600px){
+    .about-us{
+        height: 60vh;
+    }
+    .third-section{
+        height: 60vh;
+    }
+ 
+    .img-trans{
+        width: 100px;
+    }
     .fourth-section{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+    }
+    .coach-card{
+        box-shadow: 5px 10px 10px rgb(85, 54, 54);
+        margin: 30px 0px;
     }
 }

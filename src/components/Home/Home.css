@@ -5,6 +5,7 @@
     background-position: center;
     background-size:cover;
 }
+ /*================== first section style  =================*/
 .home-section{
     background: rgb(0, 0, 0); 
     background: rgba(0, 0, 0, 0.5); 
@@ -15,12 +16,20 @@
 .home-section p{
     padding-left: 300px;
 }
+
 .servicess{
     font-size: 2.5rem;
     font-weight: 700;
     color: rgb(194, 238, 36);
     text-align:center;
     padding-top: 50px;
+}
+ /*============= second section style  =============*/
+.home-service{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   margin-left: 10px;
+    
 }
 .home-intro{
     background-color: #130f11;
@@ -51,12 +60,7 @@
 .height{
     height: 60vh;
 }
-.servicesss{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-   margin-left: 10px;
-    
-}
+
 .carousel-wid{
     width: 60%;
 }
@@ -65,12 +69,9 @@
     .home{
         width: 100vw;
         height: 100vh;
-        background-image: url(https://sportsmatik.com/uploads/sports-corner/equipment-bn.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size:cover;
+      
     }
-    .servicesss{
+    .home-service{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         width: 70vw;

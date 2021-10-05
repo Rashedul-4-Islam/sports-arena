@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './About.css'
 const About = () => {
     return (
@@ -20,7 +21,7 @@ const About = () => {
                     <p className="fs-5 ">With a membership of 190+ players drawn, we have a high level of competition.</p>
                     <span>
                     <button className="btn btn-danger me-2">Join The Club</button>
-                    <button className="btn btn-danger">Learn more</button>
+                    <Link className="btn btn-danger" to="/registration">Reg.Now</Link>
                     </span>
 
                 </div>

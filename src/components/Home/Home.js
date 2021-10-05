@@ -26,7 +26,7 @@ const Home = () => {
             <h3 className="fw-bold bg-warning w-50 m-auto my-4 p-3 rounded-pill">Our Services</h3>
 
             {/*============ second section  ============*/}
-            <div className="servicesss">
+            <div className="home-service">
             {
                 service.map(ser => <div className="text-dark">
                    <Card style={{ width: '18rem',height:'24rem',backgroundColor:'black',color:'white' }}>

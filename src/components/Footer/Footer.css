@@ -18,7 +18,7 @@
 .icons p:hover{
     color: burlywood;
 }
-
+  /*============== responsive for small device  ================*/
 @media only screen and (max-width: 600px){
     .footer-area{
         height: 100vh;
